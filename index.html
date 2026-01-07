@@ -8,17 +8,15 @@
     <meta name="google-site-verification" content="googleaed6c2789e519eba" />
 
     <!-- ================= SEO 标题优化 ================= -->
-    <!-- 更新：强调0.09元资费、3年套餐 -->
     <title>400电话办理费用_3年套餐价目表_资费0.09元起_丰博云官网</title>
     
-    <!-- 描述优化：融入新资费表核心数据 -->
     <meta name="description" content="【丰博云】官方发布2025年400电话资费表。提供1800元至3万元多档位3年套餐，资费低至0.09元/分钟。赠送16项基础功能（黑白名单、通话录音等）及多项增值服务。正规签约，3-5天开通，支持开发票。">
     
     <meta name="keywords" content="400电话资费标准,400电话多少钱一年,400电话套餐介绍,400电话办理流程,丰博云,企业400电话申请">
     
     <meta http-equiv="content-language" content="zh-CN">
     
-    <!-- Schema 结构化数据：更新价格范围 -->
+    <!-- Schema 结构化数据 -->
     <script type="application/ld+json">
     [
         {
@@ -84,7 +82,6 @@
         .step-connector::after { content: ''; position: absolute; top: 20px; right: -50%; width: 100%; height: 2px; background: #e5e7eb; z-index: 0; }
         .step-item:last-child .step-connector::after { display: none; }
         @media (max-width: 768px) { .step-connector::after { display: none; } }
-        /* 推荐标签 */
         .ribbon { position: absolute; top: 0; right: 0; width: 80px; height: 80px; overflow: hidden; }
         .ribbon span { position: absolute; display: block; width: 120px; padding: 5px 0; background-color: #FF512F; box-shadow: 0 5px 10px rgba(0,0,0,.1); color: #fff; font: 700 12px/1 'Lato', sans-serif; text-shadow: 0 1px 1px rgba(0,0,0,.2); text-transform: uppercase; text-align: center; transform: rotate(45deg); left: -12px; top: 22px; }
     </style>
@@ -158,7 +155,7 @@
         </div>
     </section>
 
-    <!-- 资费套餐列表 (核心重构区域) -->
+    <!-- 资费套餐列表 -->
     <section id="price-list" class="py-16 bg-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
@@ -358,7 +355,8 @@
 
     <!-- 悬浮组件 -->
     <div id="chat-widget-container" class="fixed bottom-6 right-6 z-50 flex flex-col items-end">
-        <div id="chat-window" class="bg-white rounded-lg shadow-2xl w-64 mb-4 overflow-hidden transform transition-all duration-300 origin-bottom-right scale-100 border border-gray-100 hidden">
+        <!-- 默认移除 hidden 类，使其默认显示 -->
+        <div id="chat-window" class="bg-white rounded-lg shadow-2xl w-64 mb-4 overflow-hidden transform transition-all duration-300 origin-bottom-right scale-100 border border-gray-100">
             <div class="bg-brand-green text-white p-3 flex justify-between items-center">
                 <div class="flex items-center gap-2">
                     <!-- 图标改为 WhatsApp -->
@@ -373,7 +371,7 @@
             
             <div class="p-6 bg-white flex flex-col items-center justify-center text-center">
                 <div class="p-2 bg-white border border-gray-200 shadow-sm rounded-lg mb-4">
-                    <!-- 二维码图片 (建议您后续替换为真实的WhatsApp群组二维码) -->
+                    <!-- 二维码图片 -->
                     <img src="image_64beee.jpg" alt="WhatsApp社群二维码" class="w-32 h-32 block object-cover">
                 </div>
                 <!-- 文案调整为更符合社群的描述 -->
@@ -382,7 +380,8 @@
             </div>
         </div>
 
-        <button id="open-chat-btn" class="w-14 h-14 bg-brand-green text-white rounded-full shadow-lg flex items-center justify-center hover:bg-green-600 transition transform hover:scale-110 active:scale-95 border-2 border-white">
+        <!-- 默认添加 hidden 类，使其默认隐藏 -->
+        <button id="open-chat-btn" class="hidden w-14 h-14 bg-brand-green text-white rounded-full shadow-lg flex items-center justify-center hover:bg-green-600 transition transform hover:scale-110 active:scale-95 border-2 border-white">
             <!-- 按钮图标改为 WhatsApp -->
             <i class="fa-brands fa-whatsapp text-3xl"></i>
         </button>
